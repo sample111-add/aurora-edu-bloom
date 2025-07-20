@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Users, Award, Zap, Target } from 'lucide-react';
-import aboutImage from '@/assets/about-image.jpg';
+// Using direct Unsplash URL instead of import
 
 const About = () => {
   const features = [
@@ -115,7 +115,7 @@ const About = () => {
           >
             <div className="relative">
               <img
-                src={aboutImage}
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=800&fit=crop&crop=faces&auto=format"
                 alt="Modern learning environment"
                 className="w-full h-96 object-cover rounded-2xl shadow-elegant"
               />
