@@ -6,31 +6,31 @@ const About = () => {
   const features = [
     {
       icon: Users,
-      title: 'Expert Instructors',
-      description: 'Learn from industry professionals with years of real-world experience.',
+      title: 'Qualified Faculty',
+      description: 'Learn from dedicated teachers well-versed in both religious and secular fields.',
     },
     {
       icon: Award,
-      title: 'Certified Programs',
-      description: 'Earn recognized certifications that boost your career prospects.',
+      title: 'Integrated Education',
+      description: 'Comprehensive programs combining Islamic studies with modern academics.',
     },
     {
       icon: Zap,
-      title: 'Interactive Learning',
-      description: 'Engage with cutting-edge tools and immersive learning experiences.',
+      title: 'Holistic Development',
+      description: 'Building strong moral character alongside intellectual excellence.',
     },
     {
       icon: Target,
-      title: 'Career Focused',
-      description: 'Curriculum designed to meet current industry demands and trends.',
+      title: 'Values-Based Learning',
+      description: 'Education rooted in Islamic principles while preparing for modern careers.',
     },
   ];
 
   const achievements = [
-    { number: '15+', label: 'Years of Excellence' },
-    { number: '98%', label: 'Student Satisfaction' },
-    { number: '500+', label: 'Partner Companies' },
-    { number: '50K+', label: 'Graduates' },
+    { number: '25+', label: 'Years of Excellence' },
+    { number: '95%', label: 'Student Success Rate' },
+    { number: '4', label: 'Educational Programs' },
+    { number: '1000+', label: 'Alumni Network' },
   ];
 
   return (
@@ -51,11 +51,11 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-display font-bold mb-6">
-            About <span className="text-gradient">EduPlatform</span>
+            About <span className="text-gradient">Darul Aman</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transforming education through innovation, technology, and a deep commitment 
-            to student success. We're building the future of learning, one student at a time.
+            Darul Aman Integrated Islamic Academy is committed to providing a holistic and 
+            well-rounded education by combining Islamic studies with modern academic subjects.
           </p>
         </motion.div>
 
@@ -71,16 +71,16 @@ const About = () => {
           >
             <div className="space-y-6">
               <h3 className="text-3xl font-display font-bold">
-                Pioneering the Future of Education
+                Our Vision & Mission
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our platform represents a paradigm shift in how education is delivered and experienced. 
-                We combine cutting-edge technology with proven pedagogical methods to create learning 
-                experiences that are both engaging and effective.
+                To create a generation of knowledgeable, ethical, and visionary individuals who excel in both Islamic and modern 
+                education. We strive to preserve Islamic heritage while equipping students with 
+                technological, scientific, and intellectual skills to succeed in the modern world.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From personalized learning paths to industry-relevant curricula, we ensure every 
-                student has the tools and support they need to succeed in today's rapidly evolving world.
+                Our mission is to provide a holistic education that integrates Islamic knowledge and modern academic learning, 
+                ensuring students develop strong moral character, intellectual excellence, and leadership skills.
               </p>
             </div>
 
@@ -128,9 +128,9 @@ const About = () => {
                 transition={{ delay: 0.5, duration: 0.6 }}
                 className="absolute -bottom-8 -left-8 glass-effect rounded-2xl p-6 max-w-xs"
               >
-                <h4 className="font-display font-bold text-lg mb-2">Innovation Hub</h4>
+                <h4 className="font-display font-bold text-lg mb-2">Excellence in Education</h4>
                 <p className="text-sm text-muted-foreground">
-                  State-of-the-art facilities designed for collaborative learning and creativity.
+                  Combining traditional Islamic values with modern educational excellence in Edavannappara, Kerala.
                 </p>
               </motion.div>
             </div>

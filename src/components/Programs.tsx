@@ -1,68 +1,48 @@
 import { motion } from 'framer-motion';
-import { Code, Palette, BarChart3, Shield, Smartphone, Globe, Clock, Users } from 'lucide-react';
+import { BookOpen, GraduationCap, Users2, Building, Clock, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Programs = () => {
   const programs = [
     {
       id: 1,
-      title: 'Full-Stack Development',
-      description: 'Master modern web development with React, Node.js, and cloud technologies.',
-      icon: Code,
-      duration: '6 months',
-      students: '2.5K+',
-      level: 'Intermediate',
+      title: 'Senior Da\'wa College',
+      description: 'Advanced education for students post-10th standard, combining Islamic education with robust school curriculum. Students complete Plus One and Plus Two studies.',
+      icon: GraduationCap,
+      duration: '2 years',
+      students: '200+',
+      level: 'Advanced',
       featured: true,
       size: 'large',
     },
     {
       id: 2,
-      title: 'UI/UX Design',
-      description: 'Create stunning user experiences with design thinking and modern tools.',
-      icon: Palette,
-      duration: '4 months',
-      students: '1.8K+',
-      level: 'Beginner',
+      title: 'Junior Da\'wa College',
+      description: 'Comprehensive educational experience for students after 7th standard, blending Islamic education with standard school curriculum.',
+      icon: BookOpen,
+      duration: '3 years',
+      students: '150+',
+      level: 'Intermediate',
       size: 'medium',
     },
     {
       id: 3,
-      title: 'Data Science',
-      description: 'Unlock insights from data using Python, ML, and statistical analysis.',
-      icon: BarChart3,
-      duration: '8 months',
-      students: '1.2K+',
+      title: 'Arts College',
+      description: 'Recognized for academic excellence with highly qualified faculty and focused curricular teachings.',
+      icon: Building,
+      duration: '3 years',
+      students: '300+',
       level: 'Advanced',
       size: 'medium',
     },
     {
       id: 4,
-      title: 'Cybersecurity',
-      description: 'Protect digital assets with ethical hacking and security protocols.',
-      icon: Shield,
-      duration: '5 months',
-      students: '950+',
-      level: 'Intermediate',
-      size: 'small',
-    },
-    {
-      id: 5,
-      title: 'Mobile Development',
-      description: 'Build native and cross-platform mobile applications.',
-      icon: Smartphone,
-      duration: '5 months',
-      students: '1.5K+',
-      level: 'Intermediate',
-      size: 'small',
-    },
-    {
-      id: 6,
-      title: 'Digital Marketing',
-      description: 'Master online marketing strategies and analytics.',
-      icon: Globe,
-      duration: '3 months',
-      students: '3K+',
-      level: 'Beginner',
+      title: 'Secondary Madrasa',
+      description: 'Islamic educational institution providing religious and secular education including Quranic studies, Hadith, Fiqh, and modern subjects.',
+      icon: Users2,
+      duration: '5 years',
+      students: '250+',
+      level: 'Foundation',
       size: 'small',
     },
   ];
@@ -75,7 +55,7 @@ const Programs = () => {
 
   const getLevelColor = (level: string) => {
     switch (level) {
-      case 'Beginner': return 'bg-green-100 text-green-800';
+      case 'Foundation': return 'bg-green-100 text-green-800';
       case 'Intermediate': return 'bg-blue-100 text-blue-800';
       case 'Advanced': return 'bg-purple-100 text-purple-800';
       default: return 'bg-gray-100 text-gray-800';
@@ -94,16 +74,16 @@ const Programs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-display font-bold mb-6">
-            Our <span className="text-gradient">Programs</span>
+            Our <span className="text-gradient">Educational Programs</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive courses designed by industry experts to prepare you for the 
-            most in-demand careers in technology and business.
+            Comprehensive educational programs that integrate Islamic knowledge with modern academic learning, 
+            preparing students for both religious and professional excellence.
           </p>
         </motion.div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -185,10 +165,10 @@ const Programs = () => {
           className="text-center mt-16"
         >
           <p className="text-lg text-muted-foreground mb-6">
-            Can't find what you're looking for?
+            Ready to join our integrated educational system?
           </p>
           <Button size="lg" className="bg-gradient-primary hover-glow px-8">
-            View All Programs
+            Apply Now
           </Button>
         </motion.div>
       </div>

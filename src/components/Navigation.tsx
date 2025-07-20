@@ -43,7 +43,7 @@ const Navigation = () => {
               <GraduationCap className="w-6 h-6 text-white" />
             </div>
             <span className="text-xl font-display font-bold text-gradient">
-              EduPlatform
+              Darul Aman
             </span>
           </motion.div>
 

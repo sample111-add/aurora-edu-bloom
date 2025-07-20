@@ -30,22 +30,22 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Education Street', 'Innovation District', 'Tech City, TC 12345'],
+      details: ['Darul Aman Da\'wa College', 'Edavannappara, P.O Chevayoor', 'Malappuram, Kerala, India 673645'],
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      details: ['+91 9946205711', '+0483 2725530'],
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@eduplatform.com', 'admissions@eduplatform.com'],
+      details: ['darulaman313@gmail.com'],
     },
     {
       icon: Clock,
       title: 'Office Hours',
-      details: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM'],
+      details: ['Daily after Maghrib - Kitab Reading', 'Thursday after Maghrib - Majlis', 'Contact for admission inquiries'],
     },
   ];
 
@@ -64,8 +64,8 @@ const Contact = () => {
             Get in <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your learning journey? We're here to help you every step of the way. 
-            Reach out to us and let's discuss your educational goals.
+            Ready to join our integrated Islamic education system? Contact us to learn more about 
+            our programs and admission process. We're here to guide your educational journey.
           </p>
         </motion.div>
 

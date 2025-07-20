@@ -5,9 +5,9 @@ import heroImage from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const stats = [
-    { icon: Users, value: '10K+', label: 'Students' },
-    { icon: BookOpen, value: '200+', label: 'Courses' },
-    { icon: Trophy, value: '95%', label: 'Success Rate' },
+    { icon: Users, value: '1000+', label: 'Students' },
+    { icon: BookOpen, value: '4', label: 'Programs' },
+    { icon: Trophy, value: '25+', label: 'Years Excellence' },
   ];
 
   return (
@@ -34,9 +34,9 @@ const Hero = () => {
                 transition={{ delay: 0.2, duration: 0.8 }}
                 className="text-6xl lg:text-7xl font-display font-extrabold leading-tight"
               >
-                Education,{' '}
+                Islamic{' '}
                 <span className="text-gradient">
-                  Reimagined
+                  Education, Excellence
                 </span>
               </motion.h1>
               
@@ -46,8 +46,8 @@ const Hero = () => {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-xl text-muted-foreground max-w-lg leading-relaxed"
               >
-                Unlock your potential with cutting-edge courses, expert instructors, 
-                and a community that empowers your learning journey.
+                Combining Islamic studies with modern education at Darul Aman Integrated Islamic Academy. 
+                Building strong moral character while preparing for academic and professional excellence.
               </motion.p>
             </div>
 
@@ -62,7 +62,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-gradient-primary hover-glow text-lg px-8 py-6"
               >
-                Start Learning Today
+                Apply for Admission
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               
@@ -72,7 +72,7 @@ const Hero = () => {
                 className="text-lg px-8 py-6 hover:bg-accent hover:text-accent-foreground hover:border-accent"
               >
                 <Play className="mr-2 w-5 h-5" />
-                Watch Demo
+                Virtual Tour
               </Button>
             </motion.div>
 

@@ -6,35 +6,35 @@ const News = () => {
   const newsItems = [
     {
       id: 1,
-      title: 'Revolutionary AI Course Launch',
-      excerpt: 'Introducing our comprehensive AI and Machine Learning program designed for the next generation of tech innovators.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-      date: '2024-01-15',
-      author: 'Dr. Sarah Chen',
-      readTime: '5 min read',
-      category: 'Programs',
+      title: 'Ibraheem Saqafi Puzhakattiri Launches the Official Website for Optimus\'25',
+      excerpt: 'The official Optimus\'2k25 website was launched in a grand inauguration ceremony, showcasing our commitment to digital innovation.',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+      date: '2025-01-31',
+      author: 'Ibraheem Saqafi Puzhakattiri',
+      readTime: '3 min read',
+      category: 'Technology',
       featured: true
     },
     {
       id: 2,
-      title: 'Student Success Story: From Bootcamp to Tech Lead',
-      excerpt: 'Follow Maria Rodriguez\'s journey from our web development bootcamp to becoming a senior tech lead at a Fortune 500 company.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
-      date: '2024-01-12',
-      author: 'James Wilson',
-      readTime: '8 min read',
-      category: 'Success Stories',
+      title: 'Thajul Ulama (QA) Commemoration',
+      excerpt: 'A large gathering of scholars, community leaders, and followers commemorated Thajul Ulama with speeches highlighting his contributions to Islamic education.',
+      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop',
+      date: '2024-10-10',
+      author: 'Academy Administration',
+      readTime: '5 min read',
+      category: 'Events',
       featured: false
     },
     {
       id: 3,
-      title: 'Partnership with Leading Tech Companies',
-      excerpt: 'We\'re excited to announce new partnerships with Google, Microsoft, and Amazon for exclusive internship opportunities.',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop',
-      date: '2024-01-10',
-      author: 'Michael Foster',
-      readTime: '3 min read',
-      category: 'Partnerships',
+      title: 'Biblio Bazar Book Fair',
+      excerpt: 'The much-anticipated Biblio Bazar book fair opened as part of the Sahitholsavu literary festival, bringing together readers, writers, and publishers from across the state.',
+      image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop',
+      date: '2024-08-12',
+      author: 'Event Committee',
+      readTime: '4 min read',
+      category: 'Literature',
       featured: false
     }
   ];
@@ -63,8 +63,8 @@ const News = () => {
             Latest <span className="text-gradient">News & Events</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay updated with the latest developments, success stories, and exciting 
-            announcements from our educational community.
+            Stay informed about our educational activities, special events, and 
+            community achievements at Darul Aman Educational Institution.
           </p>
         </motion.div>
 
