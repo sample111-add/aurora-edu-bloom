@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Ultra-modern educational platform design system */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - soft off-white theme */
+    --background: 210 20% 98%;
+    --foreground: 220 13% 18%;
 
+    /* Surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
+    --glass: 0 0% 100% / 0.8;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand colors - electric teal primary */
+    --primary: 174 100% 39%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 174 100% 50%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors - bright magenta */
+    --accent: 322 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 322 84% 70%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Supporting colors */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Semantic colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 174 100% 39%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 100% 39%), hsl(174 100% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(322 84% 60%), hsl(322 84% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 100% 39% / 0.1), hsl(322 84% 60% / 0.1));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
+
+    /* Shadows and depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(220 13% 18% / 0.1);
+    --shadow-glass: 0 8px 32px hsl(174 100% 39% / 0.1);
+    --shadow-accent: 0 8px 25px hsl(322 84% 60% / 0.3);
+
+    /* Border radius */
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +122,37 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+/* Custom utility classes for modern effects */
+@layer utilities {
+  .glass-effect {
+    @apply bg-glass backdrop-blur-lg border border-white/20 shadow-glass;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-accent;
+  }
+
+  .bento-card {
+    @apply bg-card rounded-lg p-6 shadow-elegant hover:shadow-glass transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .masonry-item {
+    @apply break-inside-avoid mb-6;
   }
 }
